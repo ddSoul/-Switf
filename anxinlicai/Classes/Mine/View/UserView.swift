@@ -15,10 +15,10 @@ class UserView: UIView {
                                    height:UIScreen.main.bounds.height)
     var headImageView : UIImageView?
     var nickNameLable : UILabel?
+    var topBackImage  : UIImageView?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        print("走上")
         setupSubviews()
     }
     
@@ -28,29 +28,47 @@ class UserView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        print("走下---")
-//        setupSubviews()
     }
     
     func setupSubviews() {
         self.headImageView = UIImageView()
         self.nickNameLable = UILabel()
+        self.topBackImage = UIImageView()
+        
         self.headImageView?.backgroundColor = UIColor.red
-        self.nickNameLable?.backgroundColor = UIColor.green
-        self.nickNameLable?.layer.masksToBounds = true
-        self.nickNameLable?.layer.cornerRadius = 50
+        self.headImageView?.image = UIImage(named : "avatar")
+        self.headImageView?.layer.masksToBounds = true
+        self.headImageView?.layer.cornerRadius = 50
+        
+        self.topBackImage?.image = UIImage(named: "top")
+        self.nickNameLable?.textAlignment = NSTextAlignment(rawValue: 1)!
+        self.nickNameLable?.backgroundColor = UIColor.clear
+        self.nickNameLable?.textColor = UIColor.white
+        self.nickNameLable?.text = "NUll"
+    
+        
+        self.addSubview(self.topBackImage!)
         self .addSubview(self.headImageView!)
         self .addSubview(self.nickNameLable!)
+     
         
-        headImageView?.snp_makeConstraints{
+        topBackImage?.snp_makeConstraints{
             (make) -> Void in
             make.top.left.right.bottom.equalTo(0)
         }
-        nickNameLable?.snp_makeConstraints{
+        
+        headImageView?.snp_makeConstraints{
             (make) -> Void in
             make.height.width.equalTo(100)
-            make.top.equalTo(100)
+            make.top.equalTo(30)
             make.left.equalTo(self.viewBounds.width/2-50)
+        }
+        nickNameLable?.snp_makeConstraints{
+            (make) -> Void in
+            make.height.equalTo(30)
+            make.width.equalTo(200)
+            make.top.equalTo(130)
+            make.left.equalTo(self.viewBounds.width/2-100)
         }
 
 

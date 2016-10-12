@@ -10,6 +10,7 @@
 		EE1E14E31DAE0469003C5D2B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1E14E01DAE040E003C5D2B /* SnapKit.framework */; };
 		EE1E14E41DAE0469003C5D2B /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE1E14E01DAE040E003C5D2B /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EE1E14E91DAE0842003C5D2B /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E14E81DAE0842003C5D2B /* UserView.swift */; };
+		EE1E14EB1DAE1C6C003C5D2B /* CirCleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E14EA1DAE1C6C003C5D2B /* CirCleView.swift */; };
 		EE75CD341D582B4500E89612 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75CD331D582B4500E89612 /* AppDelegate.swift */; };
 		EE75CD361D582B4500E89612 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75CD351D582B4500E89612 /* ViewController.swift */; };
 		EE75CD391D582B4500E89612 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE75CD371D582B4500E89612 /* Main.storyboard */; };
@@ -81,6 +82,7 @@
 /* Begin PBXFileReference section */
 		EE1E14DA1DAE040E003C5D2B /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../Downloads/SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		EE1E14E81DAE0842003C5D2B /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		EE1E14EA1DAE1C6C003C5D2B /* CirCleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirCleView.swift; sourceTree = "<group>"; };
 		EE75CD301D582B4500E89612 /* anxinlicai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anxinlicai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE75CD331D582B4500E89612 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE75CD351D582B4500E89612 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		EE1E14CE1DAE0229003C5D2B /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				EE1E14EA1DAE1C6C003C5D2B /* CirCleView.swift */,
 				EE1E14DA1DAE040E003C5D2B /* SnapKit.xcodeproj */,
 			);
 			path = Third;
@@ -522,6 +525,7 @@
 				EE75CD361D582B4500E89612 /* ViewController.swift in Sources */,
 				EE75CD7B1D582FBE00E89612 /* MineViewController.swift in Sources */,
 				EE75CD751D582EB100E89612 /* FinanaicoalViewController.swift in Sources */,
+				EE1E14EB1DAE1C6C003C5D2B /* CirCleView.swift in Sources */,
 				EE1E14E91DAE0842003C5D2B /* UserView.swift in Sources */,
 				EE75CD341D582B4500E89612 /* AppDelegate.swift in Sources */,
 				EE75CD791D582FB200E89612 /* HomeViewController.swift in Sources */,

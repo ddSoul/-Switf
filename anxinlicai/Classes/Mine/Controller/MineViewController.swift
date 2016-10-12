@@ -29,7 +29,7 @@ class MineViewController: UIViewController {
             (make) -> Void in
             make.left.right.equalTo(0)
             make.top.equalTo(64)
-            make.height.equalTo(300)
+            make.height.equalTo(200)
         }
     }
 
