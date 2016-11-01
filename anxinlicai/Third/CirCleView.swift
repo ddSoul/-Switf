@@ -164,7 +164,7 @@ class CirCleView: UIView, UIScrollViewDelegate {
     
     //事件触发方法
     func timerAction() {
-        print("timer", terminator: "")
+//        print("timer", terminator: "")
         contentScrollView.setContentOffset(CGPoint(x: self.frame.size.width*2, y: 0), animated: true)
     }
 

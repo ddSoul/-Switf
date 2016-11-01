@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import Alamofire
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource ,CirCleViewDelegate{
 
@@ -18,6 +19,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         self.title = "首页"
         createViews()
+        self.reloadData()
+
         
         // Do any additional setup after loading the view.
     }
@@ -46,8 +49,42 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             make.right.left.equalTo(0)
             
         }
-
+    
     }
+    
+    func reloadData(){
+    
+        
+//        Alamofire.request("https://api.108tian.com/mobile/v3/SceneDetail?id=528b91c9baf6773975578c5c/").responseJSON
+//            {
+//                response in
+//            print(response.request)  // original URL request
+//            print(response.response) // HTTP URL response
+//            print(response.data)     // server data
+//            print(response.result)   // result of response serialization
+//            
+//            if let JSON = response.result.value {
+//                print("JSON: \(JSON)")
+//            }
+//        }
+        let parameters: Parameters = [
+            "menu": "土豆",
+            "pn":  1,
+            "rn": "10",
+            "key": "2ba215a3f83b4b898d0f6fdca4e16c7c",
+        ]
+        Alamofire.request("http://apis.haoservice.com/lifeservice/cook/query?", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            .responseJSON { response in
+//                debugPrint(response)
+                if let JSON = response.result.value {
+                                    print("JSON: \(JSON)")
+                                }
+        }
+        
+
+        
+    }
+    
     // MARK: - Table view delegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tablewView?.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
