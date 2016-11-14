@@ -52,24 +52,25 @@ class UserView: UIView {
         self .addSubview(self.nickNameLable!)
      
         
-        topBackImage?.snp_makeConstraints{
-            (make) -> Void in
+        topBackImage?.snp.makeConstraints{ (make) in
             make.top.left.right.bottom.equalTo(0)
         }
-        
-        headImageView?.snp_makeConstraints{
-            (make) -> Void in
+
+        headImageView?.snp.makeConstraints{
+            (make) in
             make.height.width.equalTo(100)
             make.top.equalTo(30)
             make.left.equalTo(self.viewBounds.width/2-50)
         }
-        nickNameLable?.snp_makeConstraints{
-            (make) -> Void in
+        
+        nickNameLable?.snp.makeConstraints({ (make) in
             make.height.equalTo(30)
             make.width.equalTo(200)
             make.top.equalTo(130)
             make.left.equalTo(self.viewBounds.width/2-100)
-        }
+        })
+        
+
 
 
     }

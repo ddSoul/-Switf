@@ -10,6 +10,7 @@
 		7BB9BD791DC74C9F00F0C6DE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB9BD6B1DC74C6100F0C6DE /* Alamofire.framework */; };
 		7BB9BD7A1DC74E0E00F0C6DE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB9BD6B1DC74C6100F0C6DE /* Alamofire.framework */; };
 		7BB9BD7B1DC74E0E00F0C6DE /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB9BD6B1DC74C6100F0C6DE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7BF2357B1DC8273C00E112EB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF2357A1DC8273C00E112EB /* Student.swift */; };
 		EE1E14E31DAE0469003C5D2B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1E14E01DAE040E003C5D2B /* SnapKit.framework */; };
 		EE1E14E41DAE0469003C5D2B /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE1E14E01DAE040E003C5D2B /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EE1E14E91DAE0842003C5D2B /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E14E81DAE0842003C5D2B /* UserView.swift */; };
@@ -141,6 +142,7 @@
 
 /* Begin PBXFileReference section */
 		7BB9BD5F1DC74C6000F0C6DE /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		7BF2357A1DC8273C00E112EB /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		EE1E14DA1DAE040E003C5D2B /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../Downloads/SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		EE1E14E81DAE0842003C5D2B /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		EE1E14EA1DAE1C6C003C5D2B /* CirCleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirCleView.swift; sourceTree = "<group>"; };
@@ -382,6 +384,7 @@
 		EE75CD6E1D582E4900E89612 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7BF2357A1DC8273C00E112EB /* Student.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -657,6 +660,7 @@
 				EE75CD361D582B4500E89612 /* ViewController.swift in Sources */,
 				EE75CD7B1D582FBE00E89612 /* MineViewController.swift in Sources */,
 				EE75CD751D582EB100E89612 /* FinanaicoalViewController.swift in Sources */,
+				7BF2357B1DC8273C00E112EB /* Student.swift in Sources */,
 				EE1E14EB1DAE1C6C003C5D2B /* CirCleView.swift in Sources */,
 				EE1E14E91DAE0842003C5D2B /* UserView.swift in Sources */,
 				EE75CD341D582B4500E89612 /* AppDelegate.swift in Sources */,

@@ -42,13 +42,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tablewView?.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.view.addSubview(self.tablewView!)
         
-        self.tablewView?.snp_makeConstraints {
-            (make) -> Void in
+        self.tablewView?.snp.makeConstraints({ (make) in
             make.top.equalTo(264)
             make.bottom.equalTo(-49)
             make.right.left.equalTo(0)
-            
-        }
+        })
     
     }
     
@@ -98,6 +96,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("___click")
     }
     
     // MARK: - cir Delegate
