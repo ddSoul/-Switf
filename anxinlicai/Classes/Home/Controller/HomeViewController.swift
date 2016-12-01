@@ -14,12 +14,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     var tablewView : UITableView?
     var circleView: CirCleView!
+    var keyboardm  = KeyBoardTool()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "首页"
         createViews()
         self.reloadData()
+        
+        self.keyboardm.addObserverKeyBoard()
 
         
         // Do any additional setup after loading the view.
@@ -30,7 +34,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.automaticallyAdjustsScrollViewInsets = false
         let imageArray: [UIImage?] = [UIImage(named: "first.jpg"), UIImage(named: "second.jpg"), UIImage(named: "third.jpg")]
         
-        self.circleView = CirCleView(frame: CGRect(x: 0, y: 64, width: self.view.frame.size.width, height: 200), imageArray: imageArray)
+        self.circleView = CirCleView(frame: CGRect(x: 0, y: 64, width: self.view.width, height: 200), imageArray: imageArray)
         circleView.backgroundColor = UIColor.orange
         circleView.delegate = self
         self.view.addSubview(circleView)

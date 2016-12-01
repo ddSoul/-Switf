@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B3C6D961DEEC97500BD2D97 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3C6D931DEEC97500BD2D97 /* UIView+Extension.swift */; };
+		7B3C6D991DEED54400BD2D97 /* KeyBoardTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3C6D981DEED54400BD2D97 /* KeyBoardTool.swift */; };
 		7BB9BD791DC74C9F00F0C6DE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB9BD6B1DC74C6100F0C6DE /* Alamofire.framework */; };
 		7BB9BD7A1DC74E0E00F0C6DE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB9BD6B1DC74C6100F0C6DE /* Alamofire.framework */; };
 		7BB9BD7B1DC74E0E00F0C6DE /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB9BD6B1DC74C6100F0C6DE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -27,8 +29,6 @@
 		EE75CD771D582FA000E89612 /* FoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75CD761D582FA000E89612 /* FoundViewController.swift */; };
 		EE75CD791D582FB200E89612 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75CD781D582FB200E89612 /* HomeViewController.swift */; };
 		EE75CD7B1D582FBE00E89612 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75CD7A1D582FBE00E89612 /* MineViewController.swift */; };
-		EE75CD811D586B6100E89612 /* XLTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EE75CD7E1D586B6100E89612 /* XLTabBarButton.m */; };
-		EE75CD821D586B6100E89612 /* UIView+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = EE75CD801D586B6100E89612 /* UIView+NJ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +141,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B3C6D931DEEC97500BD2D97 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		7B3C6D981DEED54400BD2D97 /* KeyBoardTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBoardTool.swift; sourceTree = "<group>"; };
 		7BB9BD5F1DC74C6000F0C6DE /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		7BF2357A1DC8273C00E112EB /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		EE1E14DA1DAE040E003C5D2B /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../Downloads/SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
@@ -164,10 +166,6 @@
 		EE75CD761D582FA000E89612 /* FoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundViewController.swift; sourceTree = "<group>"; };
 		EE75CD781D582FB200E89612 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EE75CD7A1D582FBE00E89612 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
-		EE75CD7D1D586B6100E89612 /* XLTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTabBarButton.h; sourceTree = "<group>"; };
-		EE75CD7E1D586B6100E89612 /* XLTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTabBarButton.m; sourceTree = "<group>"; };
-		EE75CD7F1D586B6100E89612 /* UIView+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NJ.h"; sourceTree = "<group>"; };
-		EE75CD801D586B6100E89612 /* UIView+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NJ.m"; sourceTree = "<group>"; };
 		EE75CD891D586C9C00E89612 /* bridg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridg.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +197,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B3C6D921DEEC97500BD2D97 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				7B3C6D931DEEC97500BD2D97 /* UIView+Extension.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		7B3C6D971DEED52A00BD2D97 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				7B3C6D981DEED54400BD2D97 /* KeyBoardTool.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		7BB9BD601DC74C6000F0C6DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +249,7 @@
 		EE75CD271D582B4500E89612 = {
 			isa = PBXGroup;
 			children = (
+				7B3C6D971DEED52A00BD2D97 /* Tool */,
 				EE1E14CE1DAE0229003C5D2B /* Third */,
 				EE75CD7C1D586B6100E89612 /* Categray */,
 				EE75CD631D582E4900E89612 /* Classes */,
@@ -432,10 +447,7 @@
 		EE75CD7C1D586B6100E89612 /* Categray */ = {
 			isa = PBXGroup;
 			children = (
-				EE75CD7D1D586B6100E89612 /* XLTabBarButton.h */,
-				EE75CD7E1D586B6100E89612 /* XLTabBarButton.m */,
-				EE75CD7F1D586B6100E89612 /* UIView+NJ.h */,
-				EE75CD801D586B6100E89612 /* UIView+NJ.m */,
+				7B3C6D921DEEC97500BD2D97 /* Swift */,
 			);
 			path = Categray;
 			sourceTree = "<group>";
@@ -654,14 +666,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE75CD771D582FA000E89612 /* FoundViewController.swift in Sources */,
-				EE75CD821D586B6100E89612 /* UIView+NJ.m in Sources */,
+				7B3C6D961DEEC97500BD2D97 /* UIView+Extension.swift in Sources */,
 				EE75CD621D582B7700E89612 /* CustomTabbar.swift in Sources */,
-				EE75CD811D586B6100E89612 /* XLTabBarButton.m in Sources */,
 				EE75CD361D582B4500E89612 /* ViewController.swift in Sources */,
 				EE75CD7B1D582FBE00E89612 /* MineViewController.swift in Sources */,
 				EE75CD751D582EB100E89612 /* FinanaicoalViewController.swift in Sources */,
 				7BF2357B1DC8273C00E112EB /* Student.swift in Sources */,
 				EE1E14EB1DAE1C6C003C5D2B /* CirCleView.swift in Sources */,
+				7B3C6D991DEED54400BD2D97 /* KeyBoardTool.swift in Sources */,
 				EE1E14E91DAE0842003C5D2B /* UserView.swift in Sources */,
 				EE75CD341D582B4500E89612 /* AppDelegate.swift in Sources */,
 				EE75CD791D582FB200E89612 /* HomeViewController.swift in Sources */,

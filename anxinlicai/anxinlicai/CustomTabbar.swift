@@ -18,18 +18,18 @@ class CustomTabbar: UITabBarController {
         let vwIndex=HomeViewController();
         let navIndex=UINavigationController(rootViewController: vwIndex);
         navIndex.title="首页";
-        navIndex.tabBarItem.image=UIImage(named: "home.png")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal); //默认显示图片
-        navIndex.tabBarItem.selectedImage=UIImage(named: "homes.png")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal); //选中后的图片
+        navIndex.tabBarItem.image=UIImage(named: "tabbar_home.png")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal); //默认显示图片
+        navIndex.tabBarItem.selectedImage=UIImage(named: "tabbar_home_highlighted.png")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal); //选中后的图片
         //.创建活动信息导航控制器
         let vwActivityInfo=FinanaicoalViewController();
         let navActivityInfo=UINavigationController(rootViewController: vwActivityInfo);
-        navActivityInfo.title="活动信息";
+        navActivityInfo.title="理财";
         navActivityInfo.tabBarItem.image=UIImage(named: "Activity-information.png")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal);
         navActivityInfo.tabBarItem.selectedImage=UIImage(named: "Activity-informations.png")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal);
         //.创建车辆展示导航控制器
         let vwCarDisplay=FoundViewController();
         let navCarDisplay=UINavigationController(rootViewController: vwCarDisplay);
-        navCarDisplay.title="车辆展示";
+        navCarDisplay.title="发现";
         navCarDisplay.tabBarItem.image=UIImage(named: "Vehicle-display.png")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal);
         navCarDisplay.tabBarItem.selectedImage=UIImage(named: "Vehicle-displays.png")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal);
         //.创建个人中心导航控制器
