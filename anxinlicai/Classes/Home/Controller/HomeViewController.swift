@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SnapKit
 import Alamofire
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource ,CirCleViewDelegate{
@@ -15,20 +14,38 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var tablewView : UITableView?
     var circleView: CirCleView!
     var keyboardm  = KeyBoardTool()
+    var gcd = GCDTool()
+    var http = HttpTool()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "首页"
         createViews()
-        self.reloadData()
+//        self.reloadData()
         
         self.keyboardm.addObserverKeyBoard()
-
+        self.gcd.preTaskSync {
+            Void in
+            print("sssssss")
+        }
+        let dic :NSDictionary = ["ke":1]
+        self.http.getRequest(parterm: dic,
+                             success: {
+                                        (response :NSDictionary) in
+                                            print("dic\(response)")
+                                        },
+                             faild: {
+                                        (error :NSError) in
+                                        })
+        
+        
+        let stringT = deferTask()
+        print("_____:\(stringT)")
         
         // Do any additional setup after loading the view.
     }
-
+    
     func createViews(){
         
         self.automaticallyAdjustsScrollViewInsets = false
@@ -56,35 +73,32 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func reloadData(){
     
-        
-//        Alamofire.request("https://api.108tian.com/mobile/v3/SceneDetail?id=528b91c9baf6773975578c5c/").responseJSON
-//            {
-//                response in
-//            print(response.request)  // original URL request
-//            print(response.response) // HTTP URL response
-//            print(response.data)     // server data
-//            print(response.result)   // result of response serialization
-//            
-//            if let JSON = response.result.value {
-//                print("JSON: \(JSON)")
-//            }
-//        }
-        let parameters: Parameters = [
-            "menu": "土豆",
-            "pn":  1,
-            "rn": "10",
-            "key": "2ba215a3f83b4b898d0f6fdca4e16c7c",
-        ]
-        Alamofire.request("http://apis.haoservice.com/lifeservice/cook/query?", method: .post, parameters: parameters, encoding: JSONEncoding.default)
-            .responseJSON { response in
-//                debugPrint(response)
-                if let JSON = response.result.value {
-                                    print("JSON: \(JSON)")
-                                }
-        }
-        
+//    http://apis.baidu.com/txapi/weixin/wxhot
+        Alamofire.request("http://apis.baidu.com/showapi_open_bus/showapi_joke/joke_text", method:.get, parameters: ["page":"1","num":"10"],headers:["apikey":"eb0d7633268c4e4d346bd6cfa57a47e5"]).responseJSON{
+            response in
+            if let json = response.result.value {
+                
+                let dic = JSON(json)
+                let sourdata = dic["showapi_res_body"]["contentlist"].array
+                for value in sourdata!
+                {
+                    print("model:\(value)")
+                    
+                }
+            }
 
+        }
+    
+    }
+    
+    func deferTask() -> String
+    {
         
+        defer{
+            print("延迟操作的任务")
+        }
+        print("正常的任务")
+        return "操作"
     }
     
     // MARK: - Table view delegate
@@ -109,6 +123,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     // MARK: - cir Delegate
     func clickCurrentImage(_ currentIndxe: Int){
         print("\(currentIndxe)")
+        let bannerVc = BannerWebVC()
+        self.navigationController?.pushViewController(bannerVc, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

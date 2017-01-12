@@ -9,10 +9,21 @@
 /* Begin PBXBuildFile section */
 		7B3C6D961DEEC97500BD2D97 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3C6D931DEEC97500BD2D97 /* UIView+Extension.swift */; };
 		7B3C6D991DEED54400BD2D97 /* KeyBoardTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3C6D981DEED54400BD2D97 /* KeyBoardTool.swift */; };
+		7B40D55A1DEFB9F100D02031 /* GCDTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40D5591DEFB9F100D02031 /* GCDTool.swift */; };
+		7B49CE121E00E06A00E484B9 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49CE111E00E06A00E484B9 /* MyView.swift */; };
+		7B49CE1C1E01105900E484B9 /* Pop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49CE1B1E01105900E484B9 /* Pop.swift */; };
+		7B49CE1E1E0113BB00E484B9 /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49CE1D1E0113BB00E484B9 /* PersonTest.swift */; };
+		7B49CE201E0113E800E484B9 /* PerT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49CE1F1E0113E800E484B9 /* PerT.swift */; };
+		7B4D129E1E0BC89300A121AB /* MineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4D129C1E0BC89300A121AB /* MineCell.swift */; };
+		7B4D129F1E0BC89300A121AB /* MineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4D129D1E0BC89300A121AB /* MineCell.xib */; };
+		7B4D12A91E0BCC9D00A121AB /* BannerWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4D12A81E0BCC9D00A121AB /* BannerWebVC.swift */; };
+		7B57DCED1E10C3F200F4AE13 /* MyBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B57DCEC1E10C3F200F4AE13 /* MyBoardView.swift */; };
+		7B944D521DEFF143005F3C62 /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B944D511DEFF143005F3C62 /* HttpTool.swift */; };
+		7B944D801DF00709005F3C62 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B944D7F1DF00709005F3C62 /* SwiftyJSON.swift */; };
 		7BB9BD791DC74C9F00F0C6DE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB9BD6B1DC74C6100F0C6DE /* Alamofire.framework */; };
-		7BB9BD7A1DC74E0E00F0C6DE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB9BD6B1DC74C6100F0C6DE /* Alamofire.framework */; };
 		7BB9BD7B1DC74E0E00F0C6DE /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB9BD6B1DC74C6100F0C6DE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7BF2357B1DC8273C00E112EB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF2357A1DC8273C00E112EB /* Student.swift */; };
+		7BF2BCF81E27153700FAB76A /* MyTbbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF2BCF71E27153700FAB76A /* MyTbbarViewController.swift */; };
 		EE1E14E31DAE0469003C5D2B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1E14E01DAE040E003C5D2B /* SnapKit.framework */; };
 		EE1E14E41DAE0469003C5D2B /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE1E14E01DAE040E003C5D2B /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EE1E14E91DAE0842003C5D2B /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E14E81DAE0842003C5D2B /* UserView.swift */; };
@@ -143,8 +154,20 @@
 /* Begin PBXFileReference section */
 		7B3C6D931DEEC97500BD2D97 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		7B3C6D981DEED54400BD2D97 /* KeyBoardTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBoardTool.swift; sourceTree = "<group>"; };
+		7B40D5591DEFB9F100D02031 /* GCDTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDTool.swift; sourceTree = "<group>"; };
+		7B49CE111E00E06A00E484B9 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		7B49CE1B1E01105900E484B9 /* Pop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pop.swift; sourceTree = "<group>"; };
+		7B49CE1D1E0113BB00E484B9 /* PersonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
+		7B49CE1F1E0113E800E484B9 /* PerT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerT.swift; sourceTree = "<group>"; };
+		7B4D129C1E0BC89300A121AB /* MineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineCell.swift; sourceTree = "<group>"; };
+		7B4D129D1E0BC89300A121AB /* MineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineCell.xib; sourceTree = "<group>"; };
+		7B4D12A81E0BCC9D00A121AB /* BannerWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerWebVC.swift; sourceTree = "<group>"; };
+		7B57DCEC1E10C3F200F4AE13 /* MyBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBoardView.swift; sourceTree = "<group>"; };
+		7B944D511DEFF143005F3C62 /* HttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
+		7B944D7F1DF00709005F3C62 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		7BB9BD5F1DC74C6000F0C6DE /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		7BF2357A1DC8273C00E112EB /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		7BF2BCF71E27153700FAB76A /* MyTbbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTbbarViewController.swift; sourceTree = "<group>"; };
 		EE1E14DA1DAE040E003C5D2B /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../Downloads/SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		EE1E14E81DAE0842003C5D2B /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		EE1E14EA1DAE1C6C003C5D2B /* CirCleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirCleView.swift; sourceTree = "<group>"; };
@@ -175,7 +198,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BB9BD791DC74C9F00F0C6DE /* Alamofire.framework in Frameworks */,
-				7BB9BD7A1DC74E0E00F0C6DE /* Alamofire.framework in Frameworks */,
 				EE1E14E31DAE0469003C5D2B /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +231,9 @@
 			isa = PBXGroup;
 			children = (
 				7B3C6D981DEED54400BD2D97 /* KeyBoardTool.swift */,
+				7B40D5591DEFB9F100D02031 /* GCDTool.swift */,
+				7B944D511DEFF143005F3C62 /* HttpTool.swift */,
+				7BF2BCF71E27153700FAB76A /* MyTbbarViewController.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -230,6 +255,7 @@
 		EE1E14CE1DAE0229003C5D2B /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				7B944D7F1DF00709005F3C62 /* SwiftyJSON.swift */,
 				7BB9BD5F1DC74C6000F0C6DE /* Alamofire.xcodeproj */,
 				EE1E14EA1DAE1C6C003C5D2B /* CirCleView.swift */,
 				EE1E14DA1DAE040E003C5D2B /* SnapKit.xcodeproj */,
@@ -335,6 +361,9 @@
 		EE75CD661D582E4900E89612 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7B49CE1B1E01105900E484B9 /* Pop.swift */,
+				7B49CE1D1E0113BB00E484B9 /* PersonTest.swift */,
+				7B49CE1F1E0113E800E484B9 /* PerT.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -342,6 +371,8 @@
 		EE75CD671D582E4900E89612 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7B49CE111E00E06A00E484B9 /* MyView.swift */,
+				7B57DCEC1E10C3F200F4AE13 /* MyBoardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -392,6 +423,7 @@
 			isa = PBXGroup;
 			children = (
 				EE75CD781D582FB200E89612 /* HomeViewController.swift */,
+				7B4D12A81E0BCC9D00A121AB /* BannerWebVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -440,6 +472,8 @@
 			isa = PBXGroup;
 			children = (
 				EE1E14E81DAE0842003C5D2B /* UserView.swift */,
+				7B4D129C1E0BC89300A121AB /* MineCell.swift */,
+				7B4D129D1E0BC89300A121AB /* MineCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -640,6 +674,7 @@
 			files = (
 				EE75CD3E1D582B4500E89612 /* LaunchScreen.storyboard in Resources */,
 				EE75CD3B1D582B4500E89612 /* Assets.xcassets in Resources */,
+				7B4D129F1E0BC89300A121AB /* MineCell.xib in Resources */,
 				EE75CD391D582B4500E89612 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,15 +703,26 @@
 				EE75CD771D582FA000E89612 /* FoundViewController.swift in Sources */,
 				7B3C6D961DEEC97500BD2D97 /* UIView+Extension.swift in Sources */,
 				EE75CD621D582B7700E89612 /* CustomTabbar.swift in Sources */,
+				7B4D12A91E0BCC9D00A121AB /* BannerWebVC.swift in Sources */,
+				7B944D801DF00709005F3C62 /* SwiftyJSON.swift in Sources */,
 				EE75CD361D582B4500E89612 /* ViewController.swift in Sources */,
+				7B49CE1C1E01105900E484B9 /* Pop.swift in Sources */,
 				EE75CD7B1D582FBE00E89612 /* MineViewController.swift in Sources */,
 				EE75CD751D582EB100E89612 /* FinanaicoalViewController.swift in Sources */,
+				7B40D55A1DEFB9F100D02031 /* GCDTool.swift in Sources */,
+				7B49CE121E00E06A00E484B9 /* MyView.swift in Sources */,
 				7BF2357B1DC8273C00E112EB /* Student.swift in Sources */,
+				7B49CE201E0113E800E484B9 /* PerT.swift in Sources */,
+				7B57DCED1E10C3F200F4AE13 /* MyBoardView.swift in Sources */,
 				EE1E14EB1DAE1C6C003C5D2B /* CirCleView.swift in Sources */,
+				7B49CE1E1E0113BB00E484B9 /* PersonTest.swift in Sources */,
 				7B3C6D991DEED54400BD2D97 /* KeyBoardTool.swift in Sources */,
 				EE1E14E91DAE0842003C5D2B /* UserView.swift in Sources */,
+				7BF2BCF81E27153700FAB76A /* MyTbbarViewController.swift in Sources */,
 				EE75CD341D582B4500E89612 /* AppDelegate.swift in Sources */,
 				EE75CD791D582FB200E89612 /* HomeViewController.swift in Sources */,
+				7B4D129E1E0BC89300A121AB /* MineCell.swift in Sources */,
+				7B944D521DEFF143005F3C62 /* HttpTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,11 +873,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Third",
 				);
 				INFOPLIST_FILE = anxinlicai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dengxiliang.z.anxinlicai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -845,11 +893,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Third",
 				);
 				INFOPLIST_FILE = anxinlicai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dengxiliang.z.anxinlicai;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -69,8 +69,6 @@ class UserView: UIView {
             make.top.equalTo(130)
             make.left.equalTo(self.viewBounds.width/2-100)
         })
-        
-
 
 
     }
